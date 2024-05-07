@@ -1,0 +1,35 @@
+1. WEBCAM INITIALIZATION: 
+ 
+Firstly, the webcam is initialized by using “cv2.vVdeoCapture” function. The 
+argument is set to “0” which means it uses the default camera (normally the webcam 
+connected to the system) for the capturing of the video. 
+ 
+2. FRAME ACQUISITION: 
+ 
+After the capturing of image the frames of the images are continuously read from the 
+webcam feed using “cap.read()” function. This function retrieves the latest frame 
+from the webcam and returns two values: a Boolean indicating whether the frame was 
+successfully captured (ret) and the captured frame itself (frame).  
+ 
+3. FACE DETECTION: 
+ 
+Once a frame is obtained, computer vision techniques are applied to detect faces 
+within the frame. The OpenCV library provides a “CascadeClassifier” class, which is 
+pre-trained with a cascade classifier for face detection. This classifier is capable of 
+identifying facial features within the frame, such as eyes, nose, and mouth, to 
+determine the presence and location of faces. 
+ 
+4. FACE IMAGE CAPTURE: 
+ 
+After detecting a face within the frame, the code captures the face image by isolating 
+the region of interest (ROI) corresponding to the detected face. The coordinates (x, y, 
+width, height) of the bounding box around the detected face are extracted from the 
+face detection results. Using these coordinates, the face image is cropped from the 
+original frame to isolate the face region. 
+ 
+5. IMAGE PROCESSING: 
+ 
+The captured face image may undergo additional preprocessing steps to enhance its 
+quality or prepare it for further analysis. Common preprocessing steps may include 
+converting the image to grayscale, resizing it to a specific dimension, or applying 
+image enhancement techniques to improve clarity.
