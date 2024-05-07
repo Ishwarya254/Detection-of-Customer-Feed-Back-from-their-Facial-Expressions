@@ -1,0 +1,18 @@
+1.  EMOTION RECOGNITION: 
+ 
+The pre-processed face image is passed to the DeepFace library's emotion analysis 
+function, which employs the pre-trained CNN model to recognize and analyse 
+emotions depicted in the image. The CNN model processes the input image and 
+generates predictions regarding the prevailing emotions. 
+ 
+2. DISPLAYING CAPTURED FACE IMAGE: 
+ 
+The captured face image is visualized using the matplotlib library, providing a 
+graphical representation for users to inspect the detected face. This enables users to 
+assess the quality of the captured image and verify the detected face. 
+ 
+3. EMOTION ANALYSIS OUTPUT: 
+ 
+The emotion analysis results, including the dominant emotion detected in the captured 
+face image, are printed to the console. Users can review the dominant emotion 
+predicted by the system and evaluate the accuracy of the emotion analysis
